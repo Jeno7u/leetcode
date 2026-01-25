@@ -1,12 +1,11 @@
 package main
 
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
+
+type ListNode struct {
+	Val int
+	Next *ListNode
+}
+
 // можно сократить решение вдвое если создать новый linked list и в него сохранять результаты, но мое решение по памяти
 // O(1) за счет сохранения результатов внутри l1. В любом случае мы берем значения из l1 и l2 + extra (от предыдущих вычеслений) и
 // сохраняем результат + записываем новое значение extra
@@ -54,9 +53,4 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	}
 
     return root
-}
-
-
-func main() {
-
 }

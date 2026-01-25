@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // по сути является половиной задачи Leetcode 33. Мы просто делаем lower bound binary search с условием <= nums[len(nums) - 1]
 func findMin(nums []int) int {
     l, r := 0, len(nums)
@@ -14,9 +12,4 @@ func findMin(nums []int) int {
 		}
 	}
 	return nums[l]
-}
-
-func main() {
-	nums := []int{4}
-	fmt.Println(findMin(nums))
 }

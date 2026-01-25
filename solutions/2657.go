@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // вместо hash map/set для определения были ли появления цифр до этого можно исопльзовать список и сохранять по индексу ( число - 1 )
 func findThePrefixCommonArray(A []int, B []int) []int {
 	result := make([]int, len(A))
@@ -22,10 +20,4 @@ func findThePrefixCommonArray(A []int, B []int) []int {
 	}
 	
 	return result
-}
-
-func main() {
-	A := []int{1,2,3}
-	B := []int{1,3,2}
-	fmt.Println(findThePrefixCommonArray(A, B))
 }

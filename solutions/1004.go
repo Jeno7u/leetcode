@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // движемся вправо через r до момоента пока zerosCount <= k. Если больше, то мы двигаем левый поинтер пока nums[l] не будет равен 0, постоянно сдвигая l
 // ну и result у нас это просто расстояние между l и r
 func longestOnes(nums []int, k int) int {
@@ -21,8 +19,3 @@ func longestOnes(nums []int, k int) int {
     return result
 }
 
-func main() {
-	nums := []int{0,1,1}
-	k := 0
-	fmt.Println(longestOnes(nums, k))
-}

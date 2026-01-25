@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // очевидное решение, оно такое же по скорости вроде, но требует намного больше условий и проверок,
 // но все еще корректное и хорошее решение
 // func intervalIntersection(firstList [][]int, secondList [][]int) [][]int {
@@ -72,8 +70,3 @@ func intervalIntersection(firstList [][]int, secondList [][]int) [][]int {
 	return result
 }
 
-func main() {
-	firstList := [][]int{{0,2}}
-	secondList := [][]int{}
-	fmt.Println(intervalIntersection(firstList, secondList))
-}

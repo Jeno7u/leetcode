@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // проходимся один раз и на каждом проходе добавляем в словарь текущий результат. Словарь хранит кол-во способов получения определенной суммы из префикса. Когда мы
 // проходимся, то мы проверяем что curr - target есть ли в словаре. Ведь сумму любого подсписка можно представить как сумму nums[:i] - префиксная сумма = target
 func subarraySum(nums []int, k int) int {
@@ -24,8 +22,3 @@ func subarraySum(nums []int, k int) int {
 	return result
 }
 
-func main() {
-	nums := []int{1,2,3}
-	k := 3
-	fmt.Println(subarraySum(nums, k))
-}

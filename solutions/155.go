@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type Node struct {
 	Val int
 	PrevMinimum int
@@ -16,7 +14,7 @@ type MinStack struct {
 }
 
 
-func Constructor() MinStack {
+func AnotherConstructor() MinStack {
     return MinStack{end: nil, minimum: 0}
 }
 
@@ -55,17 +53,3 @@ func (this *MinStack) GetMin() int {
     return this.minimum
 }
 
-func main() {
-	stack := Constructor()
-
-	stack.Push(2)
-	stack.Push(0)
-	stack.Push(3)
-	stack.Push(0)
-	stack.Pop()
-	fmt.Println(stack.GetMin())
-	stack.Pop()
-	fmt.Println(stack.GetMin())
-	stack.Pop()
-	fmt.Println(stack.GetMin())
-}

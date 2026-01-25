@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math/rand"
 )
 
@@ -54,13 +53,3 @@ func (this *RandomizedSet) GetRandom() int {
 // HashMap вместо HashSet и хранить как значение индекс в списке. Осталось как удалять за O(1).
 // Это можно сделать просто заменяя элемент который нужно удалить на последний элемент в списке.
 // Нам на порядок плевать, но важно исправить индексы в HashMap на новые
-func main() {
-	obj := Constructor()
-
-	fmt.Println(obj.Insert(0))
-	fmt.Println(obj.Insert(1))
-	fmt.Println(obj.Remove(0))
-	fmt.Println(obj.Insert(2))
-	fmt.Println(obj.Remove(1))
-	fmt.Println(obj.GetRandom())	
-}

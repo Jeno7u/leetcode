@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"slices"
 )
 
@@ -35,8 +34,3 @@ func checkInclusion(s1 string, s2 string) bool {
 }
 
 
-func main() {
-	s1 := "ab"
-	s2 := "eidbaooo"
-	fmt.Println(checkInclusion(s1, s2))
-}

@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func abs(x int) int {
     if x < 0 {
         return -x
@@ -25,9 +23,4 @@ func sortedSquares(nums []int) []int {
     }
 
 	return result
-}
-
-func main() {
-	nums := []int{-1, 2, 2}
-	fmt.Println(sortedSquares(nums))
 }

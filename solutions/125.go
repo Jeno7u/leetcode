@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"unicode"
 )
 
@@ -23,9 +22,4 @@ func isPalindrome(s string) bool {
 		r--
 	}
 	return true
-}
-
-func main() {
-	s := "race a car"
-	fmt.Println(isPalindrome(s))
 }

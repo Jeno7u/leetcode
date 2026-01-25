@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 
 func maxDistToClosest(seats []int) int {
 	result, last := 0, -1
@@ -16,9 +14,4 @@ func maxDistToClosest(seats []int) int {
 		}
 	}
 	return max(result, len(seats) - last - 1)
-}
-
-func main() {
-	seats := []int{1, 0, 0, 0}
-	fmt.Println(maxDistToClosest(seats))
 }

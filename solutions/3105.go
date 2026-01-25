@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 
 func longestMonotonicSubarray(nums []int) int {
 	result := 0
@@ -29,9 +27,4 @@ func longestMonotonicSubarray(nums []int) int {
 		result = max(result, curr)
 	}
 	return max(result, curr)
-}
-
-func main() {
-	nums := []int{3,2,1}
-	fmt.Println(longestMonotonicSubarray(nums))
 }

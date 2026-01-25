@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"slices"
 )
 
@@ -34,11 +33,4 @@ func findAnagrams(s string, p string) []int {
 		result = append(result, len(s) - len(p))
 	}
 	return result
-}
-
-
-func main() {
-	s := "aaaaaaaaaa"
-	p := "aaaaaaaaaaaaa"
-	fmt.Println(findAnagrams(s, p))
 }

@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func getNeighbours(grid [][]byte, i, j int) [][]int{
 	result := [][]int{}
 	di := []int{-1, 0, 0, 1}
@@ -48,12 +46,3 @@ func numIslands(grid [][]byte) int {
 }
 
 
-func main() {
-	grid := [][]byte{
-		{'1', '1', '1', '1', '0'},
-		{'1', '1', '0', '1', '0'},
-		{'1', '1', '0', '0', '0'},
-		{'0', '0', '0', '0', '0'},
-	}
-	fmt.Println(numIslands(grid))
-}
