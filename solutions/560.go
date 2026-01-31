@@ -12,12 +12,7 @@ func subarraySum(nums []int, k int) int {
 			result += val
 		}
 
-		_, ok := prefixSum[curr]
-		if ok {
-			prefixSum[curr]++
-		} else {
-			prefixSum[curr] = 1
-		}
+		prefixSum[curr]++
 	}
 	return result
 }
