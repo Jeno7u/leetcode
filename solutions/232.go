@@ -1,13 +1,10 @@
-package main
-
-
 type MyQueue struct {
     stack1 []int
     stack2 []int
 }
 
 
-func ConstructorQueue() MyQueue {
+func Constructor() MyQueue {
     return MyQueue{}
 }
 
@@ -32,10 +29,6 @@ func (this *MyQueue) Pop() int {
 
 
 func (this *MyQueue) Peek() int {
-    if len(this.stack2) != 0 {
-        return this.stack2[len(this.stack2) - 1]
-    }
-
     if len(this.stack2) == 0 {
         for len(this.stack1) != 0 {
             this.stack2 = append(this.stack2, this.stack1[len(this.stack1) - 1])
