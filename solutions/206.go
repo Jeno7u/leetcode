@@ -1,19 +1,13 @@
 package main
 
-
+// вот самый короткий вариант
 func reverseList(head *ListNode) *ListNode {
-    if head == nil {
-        return nil
-    }
-
-    var prev *ListNode
-    next := head.Next
+    var node *ListNode
     for head != nil {
-        head.Next = prev
-        if next == nil {
-            break
-        }
-        prev, head, next = head, next, next.Next
+        tmp := head.Next
+        head.Next = node
+        node = head
+        head = tmp
     }
-    return head
+    return node
 }
