@@ -1,10 +1,12 @@
+package main
+
 type MyQueue struct {
     stack1 []int
     stack2 []int
 }
 
 
-func Constructor() MyQueue {
+func ConstructorQueue() MyQueue {
     return MyQueue{}
 }
 
@@ -46,13 +48,3 @@ func (this *MyQueue) Empty() bool {
     }
     return false
 }
-
-
-/**
- * Your MyQueue object will be instantiated and called as such:
- * obj := Constructor();
- * obj.Push(x);
- * param_2 := obj.Pop();
- * param_3 := obj.Peek();
- * param_4 := obj.Empty();
- */
