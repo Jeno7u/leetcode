@@ -5,13 +5,13 @@ import (
 )
 
 func isPalindrome(s string) bool {
-	l, r := 0, len(s) - 1
+	l, r := 0, len(s)-1
 	for l < r {
 		if !unicode.IsLetter(rune(s[l])) && !unicode.IsNumber(rune(s[l])) {
 			l++
 			continue
 		}
-		if !unicode.IsLetter(rune(s[r])) && !unicode.IsNumber(rune(s[r])){
+		if !unicode.IsLetter(rune(s[r])) && !unicode.IsNumber(rune(s[r])) {
 			r--
 			continue
 		}
